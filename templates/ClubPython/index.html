@@ -1,0 +1,551 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Python Club - OAU</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="{% static 'img/favicon.ico"' %}" type="image/x-icon">
+<link rel="apple-touch-icon" href="{% static 'img/apple-touch-icon.png' %}">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="{% static 'css/bootstrap.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome/css/font-awesome.css' %}">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="{% static 'css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/prettyPhoto.css' %}">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="{% static 'js/' %}"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Header -->
+<header id="header">
+  <div class="intro">
+    <div class="container">
+      <div class="row">
+        <div class="intro-text">
+          <h1>Hi, we are <br><span class="name" style="color: #c9e2b3">Python Club</span></h1>
+          <p>A community of Python Programmers and Enthusiasts.</p>
+          <a href="#about" class="btn btn-default btn-lg page-scroll">Click to learn more</a> </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Navigation -->
+<div id="nav">
+  <nav class="navbar navbar-custom">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
+        <a class="navbar-brand page-scroll" href="#page-top">Python Club</a> </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+          <li class="hidden"> <a href="#page-top"></a> </li>
+          <li> <a class="page-scroll" href="#about">About US</a> </li>
+          <li> <a class="page-scroll" href="#skills">What We Do</a> </li>
+          <li> <a class="page-scroll" href="#events">Events Timeline</a> </li>
+          <li> <a class="page-scroll" href="#portfolio">Members</a> </li>
+          <li> <a class="page-scroll" href="https://www.github.com/PythonClubOAU">Projects</a> </li>
+          <li> <a class="page-scroll" href="/blog">Blog</a> </li>
+          <li> <a class="page-scroll" href="#contact">Contact</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>About Us</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <!--<div class="col-md-12 text-center"><img src="img/about.jpg" class="img-responsive"></div>-->
+      <div class="col-md-8 col-md-offset-2">
+        <div class="about-text">
+          <p>Python Club is a community of Python Programmers and Enthusiasts.We work, joke , have fun and generally do amazing things with Python</p>
+          <p>The club was started as a result of the need for an organized team of computer programmers that stand out from the bunch of other groups.</p>
+            <p>What makes us stand out is our focus on building things rather than endless number of tutorials.</p>
+            <p>We have worked together on a lot of different projects which you can check out <a href="https://www.github.com/PythonClubOAU">here</a>.</p>
+          <p>We're headed by <a href="https://www.facebook.com/lekanmovearound">Olamilekan Wahab</a> .</p>
+            <p>While we try very much to be a body, our activities are regulated by the <a href="/">PYUNG </a>which stands for the Python Users Group in Nigeria</p>
+          <h6>Love the idea? </h6>
+            <p class="text-center"><a id="register" class="btn btn-primary page-scroll" href="#join"><i class="fa fa-download"></i>Join us</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="skills" class="text-center">
+    <div class="container">
+        <div class="section-title center">
+            <h2>What We Do</h2>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="100"> <span class="percent">100</span> </span>
+                <h4>Pure Python</h4>
+            </div>
+            <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span> </span>
+                <h4>Python Web</h4>
+            </div>
+            <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="30"> <span class="percent">30</span> </span>
+                <h4>Python Data Science</h4>
+            </div>
+            <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="100"> <span class="percent">100</span> </span>
+                <h4>Fun</h4>
+            </div>
+            <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="50"> <span class="percent">50</span> </span>
+                <h4>Tutorials</h4>
+            </div>
+            <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="65"> <span class="percent">65</span> </span>
+                <h4>Every Other Thing</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="events" class="text-center">
+    <div class="container">
+        <div class="section-title center">
+            <h2>Club Events</h2>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+                            <h4>24th <br>
+                                - <br>
+                                May 2013  </h4>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>DjangoGirls OAU</h4>
+                                <h4 class="subheading">Girls-Only Django Event.</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Django Girls was a two days program aimed at introducing girls from different areas on campus to the Django Web Framework.</p>
+                                <p>You can check out pictures of the event <a href="https://www.django.org/oau">here</a>  and more details about the event <a href="http://www.djangogirls.org/ile-ife">here</a> .</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>28th <br>
+                                - <br>
+                                December 2016 </h4>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Python Club Hackaton 101</h4>
+                                <h4 class="subheading">The First Ever Python Club Hackaton on Campus</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Hackaton 101 is a competition organized by Python Club OAU. It will feature members in groups of 2s and 3s battling out to be the ultimate Python team on campus. Love the idea? Well, contact <a href="https://www.facebook.com/lekanmovearound">Lekan</a> for more information. </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <h4>29th <br>
+                                - <br>
+                                December 2016 </h4>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>General Meetup</h4>
+                                <h4 class="subheading">Last Python Club MeetUp of the semester.</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>This event would be the last meetup we have for the semester. We'd do a showcase of all the things we've worked on, events held and things everyone learned in relation to Python through the semester..</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+<div class="container">
+        <div class="section-title center">
+            <h2>General Events</h2>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="timeline">
+
+                    <!-- Education Section-->
+
+                    <li>
+                        <div class="timeline-image">
+                            <h4>March<br>
+                                - <br>
+                                2017 </h4>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>DevTalk Event</h4>
+                                <h4 class="subheading">A Four Days student developer conference for students from all
+                                schools in the  country.</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Details about DevTalk coming soon....</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Skills Section -->
+
+
+<!-- Portfolio Section -->
+<div id="portfolio">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>Portfolio</h2>
+      <hr>
+    </div>
+    <div class="categories">
+      <ul class="cat">
+        <li>
+          <ol class="type">
+            <li><a href="#" data-filter="*" class="active">All</a></li>
+            <li><a href="#" data-filter=".admin">Admin</a></li>
+            <li><a href="#" data-filter=".web">Web</a></li>
+              <li><a href="#" data-filter=".ds">Data Science</a></li>
+              <li><a href="#" data-filter=".net">Networking</a></li>
+              <li><a href="#" data-filter=".beg">Beginners</a></li>
+              <li><a href="#" data-filter=".ladies">Ladies</a></li>
+          </ol>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+      <p><b>A cross-section of our members.</b></p>
+    <div class="row">
+      <div class="portfolio-items">
+           <div class="col-sm-6 col-md-3 col-lg-3 admin web ds beg net ladies   ">
+          <div class="portfolio-item">
+{#              All#}
+            <div class="hover-bg"> <a href="{% static 'img/members/anotherlekan.jpg' %}" title="Hi, I'm Olamilekan Wahab. Coordinator of Python Club OAU" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Olamilekan Wahab</h4>
+                <small>Coordinator</small> </div>
+              <img src="{% static 'img/members/olamileka.jpg' %}" class="img-responsive" alt="Olamilekan Wahab"> </a> </div>
+          </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 admin web">
+            <div class="portfolio-item">
+{#              All#}
+            <div class="hover-bg"> <a href="{% static 'img/members/IMG_20161010_044936.jpg' %}" title="Hi, I'm Olamilekan Wahab. Coordinator of Python Club OAU" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Bashir Hamza</h4>
+                <small>Malam</small> </div>
+              <img src="{% static 'img/members/IMG_20161010_044936.jpg' %}" class="img-responsive" alt="Olamilekan Wahab"> </a> </div>
+          </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 beg">
+            <div class="portfolio-item">
+{#              All#}
+            <div class="hover-bg"> <a href="{% static 'img/members/IMG-20161023-WA0000.jpg' %}" title="Hi, I'm Tolu. The pimp of the Club." rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Tolu</h4>
+                <small>Pimp of Life</small> </div>
+              <img src="{% static 'img/members/IMG-20161023-WA0000.jpg' %}" class="img-responsive" alt=""> </a> </div>
+          </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 admin net web">
+            <div class="portfolio-item">
+{#              All#}
+            <div class="hover-bg"> <a href="{% static 'img/members/426334613_69350.jpg' %}" title="Hi, Ashamu David. The Bosseth of Life" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Ashamu David</h4>
+                <small>Boss of Life</small> </div>
+              <img src="{% static 'img/members/426334613_69350.jpg' %}" class="img-responsive" alt="Ashamu David"> </a> </div>
+          </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 admin  web ladies">
+            <div class="portfolio-item">
+{#              All#}
+            <div class="hover-bg"> <a href="{% static 'img/members/tabithat.jpg' %}" title="Hi, I'm Tabitha" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Tabitha</h4>
+                <small>Bosseth of Life</small> </div>
+              <img src="{% static 'img/members/tabithat.jpg' %}" class="img-responsive" alt="Fasoyin Tabitha"> </a> </div>
+          </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 admin  web ladies">
+            <div class="portfolio-item">
+{#              All#}
+            <div class="hover-bg"> <a href="{% static 'img/members/Dorcas 20160828_200650.jpg' %}" title="Hi, I'm Balogun Dorcas" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Balogun Dorcas</h4>
+                <small>Bosseth of the  Bosseth of Life</small> </div>
+              <img src="{% static 'img/members/Dorcas 20160828_200650.jpg' %}" class="img-responsive" alt="Balogun Dorcas"> </a> </div>
+          </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Achievements Section -->
+<div id="achievements" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Some Stats</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="200ms">
+        <div class="achievement-box"> <span class="count">50</span>
+          <h4>Members</h4>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="400ms">
+        <div class="achievement-box"> <span class="count">18</span>
+          <h4>Hours of Work</h4>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="600ms">
+        <div class="achievement-box"> <span class="count">3</span>
+          <h4>Awards/Recognitions</h4>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="800ms">
+        <div class="achievement-box"> <span class="count">8</span>
+          <h4>Projects</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Resume Section -->
+<!-- Contact Section -->
+<div id="contact" class="text-center contact">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Contact</h2>
+      <hr>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-4"> <i class="fa fa-map-marker fa-2x"></i>
+        <p>White House,<br>
+         Obafemi Awolowo University,</p>
+      </div>
+      <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
+        <p>pythoncluboau@gmail.com</p>
+      </div>
+      <div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
+        <p> +2349036671876</p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <h3>Leave us a message</h3>
+      <form name="" id="" novalidate method="post">
+          {% csrf_token %}
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+                {{ form.name}}
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+                {{ form.email }}
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+            {{ form.message }}
+          <p class="help-block text-danger"></p>
+        </div>
+          <input type="hidden" name="contact" value="contact">
+        <div id="success"></div>
+        <button type="submit" id="submit" name="submit" class="btn btn-default">Send Message</button>
+      </form>
+        {% if error %}
+        <div class='alert alert-danger'>
+            <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+            <strong>{{ error }}</strong>
+            </div>
+        {% endif %}
+        {% if message %}
+        <div class='alert alert-success'>
+            <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+            <strong>{{ message | linebreaks }}</strong>
+            </div>
+        {% endif %}
+      <div class="social">
+        <ul>
+          <li><a href="https://www.facebook.com/PythonClubOAU"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://www.twitter/PythonClubOAU"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.github.com/PythonClubOAU"><i class="fa fa-github"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="join" class="text-center join">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Contact</h2>
+      <hr>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-4"> <i class="fa fa-map-marker fa-2x"></i>
+        <p>White House,<br>
+         Obafemi Awolowo University,</p>
+      </div>
+      <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
+        <p>pythoncluboau@gmail.com</p>
+      </div>
+      <div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
+        <p> +2349036671876</p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <h3>Become One Of Us</h3>
+      <form name="" id="" novalidate method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+                {{ userform.name}}
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+                {{ userform.email }}
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+        </div>
+          <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+                {{ userform.sex.label }}
+                {{ userform.sex}}
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+                {{ userform.level.label }}
+                {{ userform.level }}
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+                            {{ userform.knowledge.label }}
+            {{ userform.knowledge }}
+          <p class="help-block text-danger"></p>
+        </div>
+          <div class="form-group">
+            {{ userform.interest.label }}
+            {{ userform.interest }}
+          <p class="help-block text-danger"></p>
+        </div>
+          <div class="form-group">
+            {{ userform.bio }}
+          <p class="help-block text-danger"></p>
+        </div>
+          <div class="form-group">
+            {{ userform.message }}
+          <p class="help-block text-danger"></p>
+        </div>
+          <div class="form-group">
+            {{ userform.image }}
+          <p class="help-block text-danger"></p>
+        </div>
+          <div class="form-group">
+            {{ userform.display_image }}
+              <p></p>
+          <p class="help-block text-danger"></p>
+        </div>
+        <input type="hidden" name="contact" value="join">
+
+        <div id="success"></div>
+        <button type="submit" class="btn btn-default">Join Us</button>
+      </form>
+       {% if error %}
+        <div class='alert alert-danger'>
+            <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+            <strong>{{ userform.errors }}</strong>
+            </div>
+        {% endif %}
+        {% if message %}
+        <div class='alert alert-success'>
+            <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+            <strong>{{ message }}</strong>
+            </div>
+        {% endif %}
+      <div class="social">
+        <ul>
+          <li><a href="https://www.facebook.com/PythonClubOAU"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://www.twitter/PythonClubOAU"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.github.com/PythonClubOAU"><i class="fa fa-github"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+  <div class="container text-center">
+    <div class="fnav">
+      <p>Copyright &copy; 2016 Python Club OAU.</p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="{% static 'js/jquery.1.11.1.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/easypiechart.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.isotope.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.counterup.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/waypoints.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jqBootstrapValidation.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/slideshow.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/slideshow.js' %}"></script>
+</body>
+</html>
